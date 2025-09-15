@@ -6,11 +6,19 @@ body {
   color: #333;
 }
 
-header {
-  background: url('https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg') center center / cover no-repeat;
+/*header {
+  background: tomato;
   color: white;
   padding: 2rem;
   text-align: center;
+}*/
+
+header {
+  background: url('https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg') center center / cover no-repeat;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  text-shadow: 2px 2px black;
 }
 
 main {
@@ -30,6 +38,38 @@ ul li {
   padding: 0.5rem 0;
   border-bottom: 1px solid #ddd;
 }
+
+.menu-links{
+  text-align: center;
+}
+
+.link{
+  color: tomato;
+  margin: 5px;
+  padding: 5px;
+  text-shadow: 1px 1px lightgray;
+}
+
+.link:visited {
+  color: none;
+}
+
+.link:link {
+  text-decoration: none;
+}
+
+.link:visited {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:active {
+  text-decoration: underline;
+}
+
 
 .btn-wsp {
   display: inline-block;
