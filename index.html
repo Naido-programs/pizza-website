@@ -18,15 +18,14 @@
 </head>
 
 <body class="flex flex-col bg-neutral-50">
-    <header
-        class="sticky top-0 z-50 flex flex-col px-20 gap-1 items-center justify-center border-b-[0.5px] border-neutral-200 shadow-md shadow-black/5 bg-white">
-        <div class="flex flex-row w-full h-16 pt-1 px-5 justify-between">
-            <div class="flex flex-row gap-2">
-                <img class="object-contain" src="pizza-logo.webp" alt="">
+    <header class="md:sticky md:top-0 md:z-50 flex flex-col px-5 md:px-20 w-full h-full gap-1 items-center justify-center border-b-[0.5px] border-neutral-200 shadow-md shadow-black/5 bg-white">
+        <div class="flex flex-col md:flex-row w-full h-fit md:h-16 pt-1 md:px-5 justify-between">
+            <div class="flex flex-row gap-2 items-center justify-center">
+                <img class="object-contain w-20 h-20" src="pizza-logo.webp" alt="">
                 <h1 class="font-semibold text-red-600 text-5xl self-center drop-shadow-lg">Tú Pizzeria</h1>
             </div>
             
-            <div class="flex flex-row items-center gap-5 text-black">
+            <div class="flex flex-row justify-center items-center gap-5 text-black">
                 <button class="px-3 py-2 h-fit rounded-md hover:bg-green-100 transition-colors duration-300 ease-in-out"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
                 <button class="px-3 py-2 h-fit rounded-md hover:bg-green-100 transition-colors duration-300 ease-in-out"><i class="fa-regular fa-user fa-lg"></i></button>
                 <button class="px-3 py-2 h-fit rounded-md hover:bg-green-100 transition-colors duration-300 ease-in-out"><i class="fa-solid fa-cart-shopping fa-lg"></i></button>
@@ -34,7 +33,7 @@
         </div>
         <hr class="border-t-[0.5px] w-full border-neutral-200">
         <!-- filtros -->
-        <div id="filtros" class="flex flex-row justify-center gap-5 p-3 font-semibold text-neutral-700">
+        <div id="filtros" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-center gap-5 py-3 md:px-3 font-semibold text-neutral-700">
             <button id="ofertas"
                 class="flex flex-row gap-2 justify-center items-center border border-neutral-300 bg-white px-3 py-2 rounded-md drop-shadow-md brightness-100">
                 <div class="flex items-center justify-center bg-red-600 px-3 py-3 w-10 h-10 rounded-full">
@@ -74,34 +73,34 @@
         </div>
     </header>
 
-    <main class="flex flex-col px-20 py-5">
+    <main class="flex flex-col px-5 sm:px-20 py-5">
         <div>
             <img class="object-contain rounded-lg" src="images/Banner_oferta_50_online_5_0560e9d698.jpg" alt="">
         </div>
-        <section id="products" class="grid grid-cols-3 py-5 gap-5">
+        <section id="products" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 py-5 gap-5">
 
             </div>
         </section>
     </main>
 
-    <footer class="flex flex-col justify-center items-center px-20 gap-5 pt-10 border-t-[0.5px] text-neutral-700 bg-white">
-        <div class="grid grid-cols-4 w-full">
-            <div class="flex flex-col w-full h-full gap-3 ">
-                <h2 class="font-semibold text-lg">Aviso Legal</h2>
+    <footer class="flex flex-col justify-center items-center px-5 sm:px-20 gap-5 pt-10 border-t-[0.5px] text-neutral-700 bg-white">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full place-items-center gap-5 md:gap-0 sm:place-items-start">
+            <div class="flex flex-col w-full h-full gap-3">
+                <h2 class="font-semibold text-lg text-center sm:text-left">Aviso Legal</h2>
                 <a href="">Aviso Legal</a>
                 <a href="">Política de privacidad</a>
                 <a href="">Política de cookies</a>
                 <a href="">Condiciones promocionales</a>
             </div>
-            <div class="flex flex-col w-full h-full gap-3 ">
-                <h2 class="font-semibold text-lg">Ayuda y Pedidos</h2>
+            <div class="flex flex-col w-full h-full gap-3">
+                <h2 class="font-semibold text-lg text-center sm:text-left">Ayuda y Pedidos</h2>
                 <a href="">Localizador pizzerías</a>
                 <a href="">Pizza Delivery</a>
                 <a href="">Contacto</a>
                 <a href="">Preguntas Frecuentes</a>
             </div>
             <div class="flex flex-col w-full h-full gap-3 ">
-                <h2 class="font-semibold text-lg">Nutrición y Calidad</h2>
+                <h2 class="font-semibold text-lg text-center sm:text-left">Nutrición y Calidad</h2>
                 <a href="">Listado de alérgenos</a>
                 <a href="">Sin Gluten</a>
                 <a href="">Valores nutricionales</a>
@@ -109,7 +108,7 @@
                 <a href="">Masas</a>
             </div>
             <div class="flex flex-col w-full h-full gap-3 ">
-                <h2 class="font-semibold text-lg">Corporativo</h2>
+                <h2 class="font-semibold text-lg text-center sm:text-left">Corporativo</h2>
                 <a href="">Nuestra Historia</a>
                 <a href="">Trabaja con nosotros</a>
                 <a href="">Franquíciate</a>
