@@ -1,0 +1,215 @@
+{
+    "ofertas":[
+        {
+            "titulo":"Mybox",
+            "descripcion":"Mybox: Pizza Individual (hasta 2 ing) + Bebida 50cl + Pan de Ajo (2 uds) ó  Patatas Grill por 10,95€. Por 1€ más hazla especialidad Greatest Hits. Pizzas Premium +1€",
+            "precio":"10,95",
+            "descuento":"0",
+            "imagen":"ofertas/Mybox-MYBOX18-28.jpg"
+        },
+        {
+            "titulo":"Tus dos pizzas familiares por 23,95€ cada una",
+            "descripcion":"Añade tus dos pizzas familiares favoritas (especialidad Greatest Hits) y llévatelas por 23,95€ cada una. Pizzas Premium +1€. Personaliza tu borde desde 1,5€ más",
+            "precio":"47,90",
+            "descuento":"0",
+            "imagen":"ofertas/Tus_dos_pizzas_familiares_por_17_45€_cada_una-T_2P_144.png"
+        },
+        {
+            "titulo":"Combo Pan de Ajo ó Patatas + Bebida",
+            "descripcion":"Añade Pan de Ajo (4 uds) o unas Patatas más 1 Bebida (50cl) por 4,50€",
+            "precio":"4,50",
+            "descuento":"5,55",
+            "imagen":"ofertas/Combo_Pan_de_Ajo_o_Patatas___Bebida-MIX500-15.jpg"
+        },
+        {
+            "titulo":"Pan de Ajo Supremo (4 uds)",
+            "descripcion":"Acompaña tu pedido con uno de nuestros complementos estrella por solo 2,95€.",
+            "precio":"2,95",
+            "descuento":"3,90",
+            "imagen":"ofertas/Pan_de_Ajo_Supremo__4_uds_-P_EN_04-90.png"
+        },
+        {
+            "titulo":"2x1 Bombón helado 80ml",
+            "descripcion":"Llévate tus bombones helados favoritos, ahora 2x1",
+            "precio":"2,70",
+            "descuento":"0",
+            "imagen":"ofertas/2x1_Bombon_helado_80ml-P_PO_05-79.jpg"
+        },
+        {
+            "titulo":"Tu Tarrina Häagen-Dazs (460ml)",
+            "descripcion":"Añade una tarrina Häagen-Dazs de tu sabor favorito (460 ml.)",
+            "precio":"6,55",
+            "descuento":"8,35",
+            "imagen":"ofertas/Tu_Tarrina_Haagen-Dazs__460ml_-P_PO_502-76.jpg"
+        }
+    ],
+    "pizza":[
+        {
+            "titulo":"Pizza 4 Quesos Sin Gluten",
+            "descripcion":"Pide nuestra pizza 4 quesos sin gluten. Disfruta sus ingredientes: mezcla de queso mozzarella, queso azul, cheddar y emmental. Elige el tamaño y tu tipo de masa favorita: pan, tradicional o fina. Haz tu pedido online a domicilio.",
+            "precio":"19,90",
+            "descuento":"0",
+            "imagen":"pizza/Pizza_4_Quesos_Sin_Gluten-2225.jpg"
+        },
+        {
+            "titulo":"Pizza Barbacoa Sin Gluten",
+            "descripcion":"¿Intolerante al gluten? No te preocupes, disfruta los ingredientes de nuestra Barbacoa sin gluten: pollo, bacon y nuestra irresistible salsa barbacoa. Elige tu tipo de masa: pan, tradicional o fina. Haz tu pedido online a domicilio.",
+            "precio":"19,90",
+            "descuento":"0",
+            "imagen":"pizza/Pizza_Barbacoa_Sin_Gluten-2231.jpg"
+        },
+        {
+            "titulo":"Pizza Jamón-Bacon Sin Gluten",
+            "descripcion":"Pide nuestra pizza Jamón - bacon sin gluten y disfruta sus ingredientes: jamón y bacon. Elige el tamaño y tu tipo de masa favorita: pan, tradicional o fina. Haz tu pedido online a domicilio.",
+            "precio":"19,90",
+            "descuento":"0",
+            "imagen":"pizza/Pizza_Jamon-Bacon_Sin_Gluten-2237.jpg"
+        },
+        {
+            "titulo":"Infantil de Jamón",
+            "descripcion":"Infantil de Jamón",
+            "precio":"17,90",
+            "descuento":"0",
+            "imagen":"pizza/Infantil_de_Jamon-1814.jpg"
+        },
+        {
+            "titulo":"Infantil de Bacon",
+            "descripcion":"Infantil de Bacon",
+            "precio":"17,90",
+            "descuento":"0",
+            "imagen":"pizza/Infantil_de_Bacon-1820.jpg"
+        }
+    ],
+    "entrantes":[
+        {
+            "titulo":"Chicken Box",
+            "descripcion":"4 alitas de pollo + 4 chickenwings+ 4 delicias de pollo + 2 raciones de patatas + 2 salsas a elegir",
+            "precio":"19,95",
+            "descuento":"0",
+            "imagen":"entrantes/Chicken_Box-2083.jpg"
+        },
+        {
+            "titulo":"Patatas Supreme",
+            "descripcion":"Patatas con queso mozzarella, cheedar y bacon. Dos salsas a elegir.",
+            "precio":"4,95",
+            "descuento":"0",
+            "imagen":"entrantes/Patatas_Supreme-2087.jpg"
+        },
+        {
+            "titulo":"Alitas Smokey Hot Honey (4 uds.)",
+            "descripcion":"4 crujientes alitas de pollo marinadas y glaseadas con la nueva salsa dulce y picante Smokey Hot Honey.",
+            "precio":"6,50",
+            "descuento":"0",
+            "imagen":"entrantes/Alitas_Smokey_Hot_Honey__4_uds__-1995.jpg"
+        },
+        {
+            "titulo":"Chicken Wings Smokey Hot Honey (10 uds.)",
+            "descripcion":"10 alitas de pollo rebozadas y glaseadas con la nueva salsa dulce y picante Smokey Hot Honey.",
+            "precio":"9,95",
+            "descuento":"0",
+            "imagen":"entrantes/Chicken_Wings_Smokey_Hot_Honey__10_uds__-1999.jpg"
+        },
+        {
+            "titulo":"Cheesy Pan",
+            "descripcion":"Tierna y esponjosa masa pan cubierta de nuestra salsa cremosa y queso mozzarella. Perfecto para compartir.",
+            "precio":"4,50",
+            "descuento":"0",
+            "imagen":"entrantes/Cheesy_Pan-1936.jpg"
+        },
+        {
+            "titulo":"Pan de Ajo (4 uds.)",
+            "descripcion":"4 crujientes panes tostados con ajo y perejil.",
+            "precio":"3,60",
+            "descuento":"0",
+            "imagen":"entrantes/ph_pandeajo4uds_card-1750.jpg"
+        }
+    ],
+    "bebidas":[
+        {
+            "titulo":"Botella de agua",
+            "descripcion":"Botella de 50 cl.",
+            "precio":"1,95",
+            "descuento":"0",
+            "imagen":"bebidas/Card-1575.jpg"
+        },
+        {
+            "titulo":"Botella Kas Naranja 50cl",
+            "descripcion":"Botella de 50 cl.",
+            "precio":"2,60",
+            "descuento":"0",
+            "imagen":"bebidas/card-1595.jpg"
+        },
+        {
+            "titulo":"Botella Lipton Limón Zero 50cl",
+            "descripcion":"Botella de 50 cl.",
+            "precio":"2,60",
+            "descuento":"0",
+            "imagen":"bebidas/Botella_Lipton_Limon_Zero-1890.png"
+        },
+        {
+            "titulo":"Botella Pepsi Max 50cl",
+            "descripcion":"Botella de 50 cl.",
+            "precio":"2,60",
+            "descuento":"0",
+            "imagen":"bebidas/menu-1604.jpg"
+        },
+        {
+            "titulo":"Botella Kas Limon 50cl",
+            "descripcion":"Botella de 50 cl.",
+            "precio":"2,60",
+            "descuento":"0",
+            "imagen":"bebidas/card-1598.jpg"
+        },
+        {
+            "titulo":"Botella Seven Up Free 50cl",
+            "descripcion":"Botella de 50 cl.",
+            "precio":"2,60",
+            "descuento":"0",
+            "imagen":"bebidas/Botella_Seven_Up_Free-1884.png"
+        }
+    ],
+    "postres":[
+        {
+            "titulo":"Cinnamon Roll",
+            "descripcion":"Tierno bollo relleno de canela y azúcar.",
+            "precio":"3,20",
+            "descuento":"0",
+            "imagen":"postres/_Cinnamon_Roll-1975.jpg"
+        },
+        {
+            "titulo":"Cookie gigante",
+            "descripcion":"Galleta con pepitas de chocolate.",
+            "precio":"5,90",
+            "descuento":"0",
+            "imagen":"postres/menu-1518.jpg"
+        },
+        {
+            "titulo":"Macadamia Nut Brittle 460ml",
+            "descripcion":"Deliciosa combinación del helado clásico de vainilla y crujientes nueces de Macadamia caramelizadas.",
+            "precio":"8,35",
+            "descuento":"0",
+            "imagen":"postres/Macadamia_Nut_Brittle_460ml-2004.jpg"
+        },
+        {
+            "titulo":"Tarta de queso y fresas 460 ml",
+            "descripcion":"Helado de tarta de queso con salsa de fresa y trocitos de galleta crujiente.",
+            "precio":"8,35",
+            "descuento":"0",
+            "imagen":"postres/Strawberry_CheeseCake_460ml-2010.jpg"
+        },
+        {
+            "titulo":"Belgian Chocolate 460ml",
+            "descripcion":"Helado de puro chocolate belga con delicadas láminas de chocolate belga negro.",
+            "precio":"8,35",
+            "descuento":"0",
+            "imagen":"postres/Belgian_Chocolate_460ml-2015.jpg"
+        },
+        {
+            "titulo":"Cookies & Cream 460ml",
+            "descripcion":"Helado de vainilla con trocitos de deliciosas galletas de chocolate.",
+            "precio":"8,35",
+            "descuento":"0",
+            "imagen":"postres/Cookies___Cream_460ml-2020.jpg"
+        }
+    ]
+}
