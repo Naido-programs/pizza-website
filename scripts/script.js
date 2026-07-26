@@ -47,7 +47,6 @@ function markActiveFilter(activeButton) {
         if (activeButton.id == e.id) {
             e.classList.add("brightness-100")
             e.classList.remove("brightness-75")
-            console.log(activeButton, e)
         }
         else if (e.classList.contains("brightness-100")) {
             e.classList.remove("brightness-100")
@@ -58,7 +57,6 @@ function markActiveFilter(activeButton) {
 
 function cargaProductos(activeOption) {
     products.innerHTML = ""
-    console.log()
     fetch(window.location.href+"/data/productos.json")
         .then(data => { return data.json() })
         .then(json => {
