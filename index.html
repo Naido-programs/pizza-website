@@ -1,110 +1,134 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pizza del Vecino</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Website</title>
+
+    <script src="scripts/tailwind-3.4.17.js"></script>
+    <!-- <link rel="stylesheet" href="out.css"> -->
+
+    <link rel="shortcut icon" href="images/Pizza-Icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script defer src="scripts/script.js"></script>
 </head>
-<body>
-  <header>
-    <h1>Pizza del Vecino</h1>
-    <p><b>La pizza más cercana a tu corazón ❤️</b></p>
-  </header>
 
-  <main>
-    <section class="menu-links">
-      <b>
-      <a class="link" href="#clasicas">Clásicas</a> 
-      <a class="link" href="#premium">Premium</a> 
-      <a class="link" href="#especialidades">Especialidades</a> 
-      <a class="link" href="#porciones">Porciones Individuales</a> 
-      <a class="link" href="#bebidas">Bebidas</a> 
-      <a class="link" href="#extras">Extras y acompañamiento</a> 
-      <a class="link" href="#postres">Postres</a> 
-      <a class="link" href="#promociones">Promociones</a>
-      </b>
-    </section>
+<body class="flex flex-col bg-neutral-50">
+    <header
+        class="sticky top-0 z-50 flex flex-col px-20 gap-1 items-center justify-center border-b-[0.5px] border-neutral-200 shadow-md shadow-black/5 bg-white">
+        <div class="flex flex-row w-full h-16 pt-1 px-5 justify-between">
+            <div class="flex flex-row gap-2">
+                <img class="object-contain" src="pizza-logo.webp" alt="">
+                <h1 class="font-semibold text-red-600 text-5xl self-center drop-shadow-lg">Tú Pizzeria</h1>
+            </div>
+            
+            <div class="flex flex-row items-center gap-5 text-black">
+                <button class="px-3 py-2 h-fit rounded-md hover:bg-green-100 transition-colors duration-300 ease-in-out"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+                <button class="px-3 py-2 h-fit rounded-md hover:bg-green-100 transition-colors duration-300 ease-in-out"><i class="fa-regular fa-user fa-lg"></i></button>
+                <button class="px-3 py-2 h-fit rounded-md hover:bg-green-100 transition-colors duration-300 ease-in-out"><i class="fa-solid fa-cart-shopping fa-lg"></i></button>
+            </div>
+        </div>
+        <hr class="border-t-[0.5px] w-full border-neutral-200">
+        <!-- filtros -->
+        <div id="filtros" class="flex flex-row justify-center gap-5 p-3 font-semibold text-neutral-700">
+            <button id="ofertas"
+                class="flex flex-row gap-2 justify-center items-center border border-neutral-300 bg-white px-3 py-2 rounded-md drop-shadow-md brightness-100">
+                <div class="flex items-center justify-center bg-red-600 px-3 py-3 w-10 h-10 rounded-full">
+                    <i class="fa-solid fa-magnifying-glass-dollar fa-lg text-white"></i>
+                </div>
+                <span>Ofertas</span>
+            </button>
+            <button id="pizza"
+                class="flex flex-row gap-2 justify-center items-center border border-neutral-300 bg-white px-3 py-2 rounded-md drop-shadow-md brightness-100">
+                <div class="flex items-center justify-center bg-red-600 px-3 py-3 w-10 h-10 rounded-full">
+                    <i class="fa-solid fa-pizza-slice fa-lg text-white"></i>
+                </div>
+                <span>Pizza</span>
+            </button>
+            <button id="entrantes"
+                class="flex flex-row gap-2 justify-center items-center border border-neutral-300 bg-white px-3 py-2 rounded-md drop-shadow-md brightness-100">
+                <div class="flex items-center justify-center bg-red-600 px-3 py-3 w-10 h-10 rounded-full">
+                    <i class="fa-solid fa-drumstick-bite fa-lg text-white"></i>
+                </div>
+                <span>Entrantes</span>
+            </button>
 
-    <section id="menu">
-      <h2 id="clasicas">PIZZAS CLÁSICAS (30cm - 8 porciones)</h2>
-      <p><em>Todas nuestras pizzas llevan salsa de tomate natural y queso mozzarella.</em></p>
-      <ul>
-        <li><strong>Margherita</strong> Albahaca fresca y tomate en rodajas. - $1,800</li>
-        <li><strong>Pepperoni</strong> Doble pepperoni y orégano. - $2,200</li>
-        <li><strong>Hawaiana</strong> Jamón, piña y un toque de canela. - $2,250</li>
-        <li><strong>Cuatro Quesos</strong> Mozzarella, provolone, parmesano y queso azul - $2,500</li>
-        <li><strong>Napolitana</strong> Jamón, rodajas de tomate, aceitunas verdes y orégano. -  $2,300 </li>
-        <li><strong>Fugazzetta</strong> Cebolla, aceitunas negras y queso mozzarella extra. - $2,400</li>
-        <li><strong>Vegetariana</strong>     Choclo, morrones asados, cebolla caramelizada y espinacas. - $2,350 </li>
-      </ul>
-      <h2 id="premium">PIZZAS PREMIUM (30cm - 8 porciones)</h2>
-      <ul>
-        <li><strong>Barbacoa</strong> Salsa barbacoa, pollo desmenuzado, panceta crocante y cebolla morada. - $2,900</li>
-        <li><strong>Caprese</strong>     Queso burrata, tomate cherry, albahaca y reducción de aceto balsámico. - $2,700</li>
-        <li><strong>Especial de la Casa</strong> Salsa crema, jamón crudo, rúcula, queso parmesano y tomate cherry. - $3,100</li>
-        <li><strong>Marinara</strong> Camarones, langostinos, ajo, perejil y un toque de limón. - $2,800</li>
-        <li><strong>Cuatro Estaciones</strong> (Un cuarto de cada): Alcachofas, jamón y hongos, aceitunas y pepperoni. - $3,200</li>
-      </ul>
-      <h2 id="especialidades">ESPECIALIDADES</h2>
-      <ul>
-        <li><strong>Calzone</strong> Masa rellena y cerrada con ricotta, jamón y queso mozzarella. Acompañada de salsa de tomate. - $2,600</li>
-        <li><strong>Pizza Frita (Porción)</strong> Masa frita rellena de queso y pepperoni. ¡Una delicia italiana! - $950</li>
-      </ul>
-      <h2 id="porciones">PORCIONES INDIVIDUALES</h2>
-      <ul>
-        <li><strong>Porción de Pizza (Clásica)</strong> - $450</li>
-        <li><strong>Porción de Pizza (Premium)</strong> - $550</li>
-        <li><strong>Porción de Pizza Frita</strong> - $400</li>
-      </ul>
-      <h2 id="bebidas">BEBIDAS</h2>
-      <ul>
-        <li><strong>Agua Mineral (500ml)</strong> - $600</li>
-        <li><strong>Gaseosa (500ml)</strong> Coca-Cola, Sprite, Fanta - $800</li>
-        <li><strong>Cerveza Artesanal (Botella 500ml)</strong> Rubia, Roja o IPA - $1,400</li>
-        <li><strong>Cerveza Nacional (Lata 473ml)</strong> - $900</li>
-        <li><strong>Limonada (Vaso 500ml)</strong> Natural o con jengibre y menta. - $750</li>
-        <li><strong>Jugo de Naranja (Vaso 500ml)</strong> Exprimido natural. - $800</li>
-      </ul>
-      <h2 id="extras">EXTRAS Y ACOMPAÑAMIENTO</h2>
-      <ul>
-        <li><strong>Palitos de Ajo (6 unidades)</strong> Con salsa picante o salsa de ajo. - $1,100</li>
-        <li><strong>Pan con Ajo</strong> - $950</li>
-        <li><strong>Alitas de Pollo (6 unidades)</strong> Salsa a elección: Barbacoa, Buffalo, Teriyaki. - $1,600</li>
-        <li><strong>Ensalada César (Individual)</strong> Lechuga romana, croutons, queso parmesano y aderezo césar casero. - $1,400</li>
-        <li><strong>Ensalada Rúcula y Parmesano (Individual)</strong> Rúcula, tomate cherry, queso parmesano en láminas y reducción de aceto. - $1,500</li>
-      </ul>
-      <h2 id="postres">POSTRES</h2>
-      <ul>
-        <li><strong>Panqueques con Dulce de Leche/Nutella</strong> - $1,300</li>
-        <li><strong>Brownie con Helado</strong> - $1,500</li>
-        <li><strong>Tiramisú</strong> - $1,400</li>
-      </ul>
-      <h2 id="promociones">PROMOCIONES</h2>
-      <ul>
-        <li><strong>Combo Familiar</strong> *2 Pizzas Clásicas (a elección) + 1 Gaseosa de 1.5L* - $5,900</li>
-        <li><strong>Combo Picoteo</strong> *1 Porción de Alitas + 1 Porción de Palitos de Ajo + 2 Latas de Cerveza/Gaseosa* - $4,200</li>
-        <li><strong>Combo Light</strong> *1 Pizza Vegetariana (Individual) + 1 Ensalada Individual + 1 Agua Mineral/Jugo Natural* - $3,800</li>
-      </ul>
-    </section>
+            <button id="bebidas"
+                class="flex flex-row gap-2 justify-center items-center border border-neutral-300 bg-white px-3 py-2 rounded-md drop-shadow-md brightness-100">
+                <div class="flex items-center justify-center bg-red-600 px-3 py-3 w-10 h-10 rounded-full">
+                    <i class="fa-solid fa-bottle-water fa-lg text-white"></i>
+                </div>
+                <span>Bebidas</span>
+            </button>
+            <button id="postres"
+                class="flex flex-row gap-2 justify-center items-center border border-neutral-300 bg-white px-3 py-2 rounded-md drop-shadow-md brightness-100">
+                <div class="flex items-center justify-center bg-red-600 px-3 py-3 w-10 h-10 rounded-full">
+                    <i class="fa-solid fa-cookie-bite fa-lg text-white"></i>
+                </div>
+                <span>Postres</span>
+            </button>
+        </div>
+    </header>
 
-    <p><em>Servicio de Delivery disponible <strong>con cargo adicional.</strong></em></p>
-    <p> Aceptamos efectivo, tarjetas de débito y crédito, y transferencias.</p>
-    <p><b>¡Pregunta por nuestras promociones para fiestas!</b></p>
+    <main class="flex flex-col px-20 py-5">
+        <div>
+            <img class="object-contain rounded-lg" src="images/Banner_oferta_50_online_5_0560e9d698.jpg" alt="">
+        </div>
+        <section id="products" class="grid grid-cols-3 py-5 gap-5">
 
-    <section id="contacto">
-      <h2>Contáctanos</h2>
-      <p>📍 Calle Ficticia 123, Ciudad</p>
-      <p>📞 +34 600 123 456</p>
-      <a class="btn-wsp" href="https://wa.me/34600123456" target="_blank">📲 Pedir por WhatsApp</a>
-    </section>
-  </main>
+            </div>
+        </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 Pizza del Vecino</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <footer class="flex flex-col justify-center items-center px-20 gap-5 pt-10 border-t-[0.5px] text-neutral-700 bg-white">
+        <div class="grid grid-cols-4 w-full">
+            <div class="flex flex-col w-full h-full gap-3 ">
+                <h2 class="font-semibold text-lg">Aviso Legal</h2>
+                <a href="">Aviso Legal</a>
+                <a href="">Política de privacidad</a>
+                <a href="">Política de cookies</a>
+                <a href="">Condiciones promocionales</a>
+            </div>
+            <div class="flex flex-col w-full h-full gap-3 ">
+                <h2 class="font-semibold text-lg">Ayuda y Pedidos</h2>
+                <a href="">Localizador pizzerías</a>
+                <a href="">Pizza Delivery</a>
+                <a href="">Contacto</a>
+                <a href="">Preguntas Frecuentes</a>
+            </div>
+            <div class="flex flex-col w-full h-full gap-3 ">
+                <h2 class="font-semibold text-lg">Nutrición y Calidad</h2>
+                <a href="">Listado de alérgenos</a>
+                <a href="">Sin Gluten</a>
+                <a href="">Valores nutricionales</a>
+                <a href="">Comida de calidad</a>
+                <a href="">Masas</a>
+            </div>
+            <div class="flex flex-col w-full h-full gap-3 ">
+                <h2 class="font-semibold text-lg">Corporativo</h2>
+                <a href="">Nuestra Historia</a>
+                <a href="">Trabaja con nosotros</a>
+                <a href="">Franquíciate</a>
+            </div>
+        </div>
+        <hr class="border-t-[0.5px] w-full border-neutral-200">
+        <div class="flex flex-row justify-center items-center w-full gap-5">
+            <a href=""><i class="fa-brands fa-facebook fa-xl"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram fa-xl"></i></a>
+            <a href=""><i class="fa-brands fa-square-x-twitter fa-xl"></i></a>
+            <a href=""><i class="fa-brands fa-square-youtube fa-xl"></i></a>
+            <a href=""><i class="fa-brands fa-telegram fa-xl"></i></a>
+            <a href=""><i class="fa-brands fa-square-whatsapp fa-xl"></i></a>
+        </div>
+        <hr class="border-t-[0.5px] w-full border-neutral-200">
+        <div class="flex flex-col justify-center items-center w-full pb-5">
+            <p>Pizza Website NaidoPrograms</p>
+        </div>
+    </footer>
 </body>
-</html>
 
+</html>
