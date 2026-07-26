@@ -58,6 +58,7 @@ function markActiveFilter(activeButton) {
 
 function cargaProductos(activeOption) {
     products.innerHTML = ""
+    console.log(window.location.href)
     fetch("../data/productos.json")
         .then(data => { return data.json() })
         .then(json => {
